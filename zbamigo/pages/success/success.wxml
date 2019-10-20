@@ -1,0 +1,27 @@
+<!--pages/success/success.wxml-->
+<view class="header">
+<view class="item">
+<image src="../images/yes.png"></image>
+提交成功
+
+
+</view>
+
+
+</view>
+
+
+<view class="info"> 中心伙伴将与您联系，确认试听时间</view>
+
+<view class="title"> 中心信息</view>
+<view class='line'></view>
+
+<view class="title"> <view class='view_img'><image src='../images/lou.png'></image></view>阿米果儿童俱乐部</view>
+<view class='line'></view>
+
+<view class="title"><view class='view_img'><image src='../images/dw.png'></image></view>淄博市银泰城三楼东首阿米果儿童俱乐部</view>
+<view class='line'></view>
+
+
+<view class="title" bindtap='tel'><view class='view_img'><image src='../images/phone.png'></image></view>0533-3585399</view>
+<view class='line'></view>

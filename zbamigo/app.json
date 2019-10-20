@@ -1,0 +1,18 @@
+{
+  "pages": [
+            
+        "pages/home/home",
+        "pages/order/order",
+        "pages/index/index",
+                    "pages/success/success",
+                    
+        "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "阿米果儿童俱乐部",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,36 @@
+/* pages/order/order.wxss */
+
+.header{
+  width: 100%;
+  height: 150rpx;
+  /* background: red; */
+  text-align: center;
+  line-height: 150rpx;
+}
+.h1{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.q{
+  margin-top: 20rpx;
+}
+radio-group{
+  margin-top:  20rpx;
+}
+
+radio{
+
+  transform:scale(0.7);
+  }
+.btn{
+  height: 70rpx;
+  width: 90%;
+  margin-left:5%;
+  margin-top: 80rpx;
+  border-radius: 15rpx;
+  line-height: 70rpx;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  background: #EE7323;
+}

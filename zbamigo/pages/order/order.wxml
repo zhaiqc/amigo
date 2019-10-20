@@ -1,0 +1,31 @@
+<!--pages/order/order.wxml-->
+<view  class="header">
+
+😀预约报名成功！
+
+</view>
+<view class="h1">请继续填写，以便为您提供更好的服务.</view>
+<view  class="q h1"> 
+您之前是否了解早教
+</view>
+<radio-group bindchange="getq1">
+
+  <radio value='没有了解过'>没有了解过</radio>
+  <radio value='了解过'>了解过</radio>
+
+</radio-group>
+
+
+<view  class="q h1"> 
+您家里谁主要负责带孩子
+</view>
+
+<radio-group  bindchange="getq2">
+
+  <radio value='爸爸'>爸爸</radio>
+  <radio value='妈妈'>妈妈</radio>
+  <radio value='老人'>老人</radio>
+  <radio value='阿姨或其他'>阿姨或其他</radio>
+
+</radio-group>
+<button class='btn' bindtap='toSuccess' >立即提交</button>

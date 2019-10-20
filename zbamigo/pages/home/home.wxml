@@ -1,0 +1,58 @@
+<!--pages/home/home.wxml-->
+<view  class='header'>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+
+</view>
+
+<view class='form'>
+<view class='sign_up'>预约报名</view>
+<view class='line'></view>
+
+
+<view class='item'> <view class='item_title'> 预约中心</view>  <view class='item_content'>阿米果儿童俱乐部</view> </view>
+<view class='line'></view>
+<view class='item'> <view class='item_title'> 宝宝姓名</view>  <view class='item_content'><input class='ip'  placeholder="请输入宝宝姓名" bindinput='getname'></input></view> </view>
+<view class='line'></view>
+<view class='item'> <view class='item_title'> 宝宝月龄</view>  
+
+
+<picker model="selector"  bindchange="bindPickerChange"  range="{{agelist}}">
+<view class="item_content">
+    {{age}}                
+    </view>
+    <!-- <image class='bin' src='../images/long.png'></image> -->
+</picker>
+
+
+
+
+ </view>
+<view class='line'></view>
+
+<view class='{{showphone?"item":"item-none"}}'> <view class='item_title'> 手机号码</view>  <view class='item_content'><input class='ip' type="number" placeholder="请输入手机号码"  bindinput='getphone'></input></view> </view>
+<view class='{{showphone?"line":"item-none"}}'></view>
+<block wx:if="{{name==''||age == '未选择'}}">
+
+<button class='btn' bindtap='encryptedData' >预约免费试听课程</button>
+
+
+</block>
+
+<block wx:else>
+<block wx:if="{{showphone}}">
+<button class='btn' bindtap='encryptedData' >预约免费试听课程</button>
+
+</block>
+<block wx:else>
+<button class='btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">预约免费试听课程</button>
+</block>
+</block>
+
+</view> 
